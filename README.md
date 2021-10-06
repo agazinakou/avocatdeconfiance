@@ -1,27 +1,33 @@
-# Avocatdeconfiance
+## Avocat de confiance
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+![Screen](screen.png)
 
-## Development server
+Recherchez et contactez un avocat à partir de notre base de donnée de plus de 3 000 avocat en côte d'ivoire. 
+#### Environement technique
+- [Angular](https://angular.io/), 
+- [Bootstrap 5](https://getbootstrap.com/) 
+- [PrimeNg](https://primefaces.org/primeng/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Principe du projet
 
-## Code scaffolding
+- [x] Une interface simple
+- [x] Application web responsive
+- [x] Rechercher un avocat
+- [ ] Voir la liste des avocats
+- [ ] Déposer un avis
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
+Pour exécuter le projet, saisissez les commandes suivantes :
+``` 
+$ git clone https://github.com/agazinakou/avocatdeconfiance.git
+$ cd avocatdeconfiance
+$ npm install 
+```
 
-## Build
+This will install all dependencies required to run the node app.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Serveur de développement
+Exécutez `ng serve` pour un serveur de développement. Accédez à `http://localhost:4200/`. L'application se rechargera automatiquement si vous modifiez l'un des fichiers source.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Aide
+Si vous avez besoin d'un support technique ou avez des questions, veuillez envoyer un message à agazinakou@gmail.com ou via skype : aziiin5
