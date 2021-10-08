@@ -1,4 +1,4 @@
-<div class="card card-sm bg-transparent mt-5">
+<a class="card card-sm bg-transparent mt-5 cursor-pointer" router [routerLink]="['avocats/profil/', item.firstname + '-' + item.lastname]">
   <!-- Image -->
   <img class="card-img-top rounded-top-start rounded-bottom-end" [src]="item.picture" alt="{{ item.firstname }} {{ item.lastname }}">
   <!-- Body -->
@@ -16,4 +16,4 @@
 
   </div>
 
-</div>
+</a>

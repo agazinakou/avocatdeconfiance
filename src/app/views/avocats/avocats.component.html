@@ -1,0 +1,36 @@
+
+    <!-- WELCOME -->
+    <section class="pt-5 bg-dark pb-6">
+      <div class="container-lg">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-12 text-white">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-danger mb-5">
+              Defendez Vos Droits
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              Rechercher un avocat
+            </h1>
+            <div class="input-group rounded-top-start rounded-bottom-end shadow">
+
+              <!-- Input -->
+              <input [(ngModel)]="query" class="form-control bg-white" type="text" placeholder="Rechercher par domaine de droit" aria-label="Domaine de droit" aria-describedby="searchButton">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-10 pt-md-12 bg-dark">
+      <div class="container-lg">
+        <div class="row mt-n5">
+          <div class="col-6 col-md-3" *ngFor="let avocat of avocats | FilterLawPipe: query">
+            <app-avatar [item]="avocat"></app-avatar>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Avocat } from 'src/app/core';
+import { Avocat, StoreService } from 'src/app/core';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +10,12 @@ export class HomeComponent implements OnInit {
 
   avocats: Avocat[] = [];
   loading = true;
-
   query = '';
 
-  constructor() { }
+  constructor(private store: StoreService) { }
 
   ngOnInit(): void {
+    // TODO: Fetch API
     this.avocats = [{
       id: 1,
       picture: 'https://decizia.com/blog/wp-content/uploads/2017/06/default-placeholder.png',
@@ -37,6 +37,7 @@ export class HomeComponent implements OnInit {
       pricing: '20 000 FCFA',
       rate: '4.9'
     }];
+    this.store.setAvocats(this.avocats);
   }
 
 }

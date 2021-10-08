@@ -1,11 +1,13 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AvatarComponent } from '../shared/avatar/avatar.component';
 import { FilterLawPipe } from './pipes/filterLaw.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
-const Pipes = [
+const pipes = [
   FilterLawPipe
 ];
 @NgModule({
@@ -13,15 +15,16 @@ const Pipes = [
     AvatarComponent,
     FormsModule,
     ReactiveFormsModule,
-    ...Pipes
+    ...pipes
   ],
   declarations: [
     AvatarComponent,
-    ...Pipes
+    ...pipes
   ],
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     ReactiveFormsModule
   ]
 })

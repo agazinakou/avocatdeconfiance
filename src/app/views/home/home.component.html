@@ -29,7 +29,7 @@
               <div class="input-group rounded-top-start rounded-bottom-end shadow">
 
                 <!-- Input -->
-                <input [(ngModel)]="query" class="form-control bg-white" type="text" placeholder="Domaine de droit" aria-label="Domaine de droit" aria-describedby="searchButton">
+                <input [(ngModel)]="query" class="form-control bg-white" type="text" placeholder="Rechercher par domaine de droit" aria-label="Domaine de droit" aria-describedby="searchButton">
 
               </div>
 
@@ -59,7 +59,7 @@
             <!-- Nav -->
             <ul class="nav nav-tabs nav-dark nav-overflow mb-0" id="teamTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <a class="nav-link active text-primary" href="#">
+                <a class="nav-link active text-primary" routerLink="/avocats">
                   Voir plus
                 </a>
               </li>
@@ -67,9 +67,14 @@
 
           </div>
         </div>
-        <div class="row mt-n5">
+        <div class="row mt-n5 pb-5">
           <div class="col-6 col-md-3" *ngFor="let avocat of avocats | FilterLawPipe: query">
             <app-avatar [item]="avocat"></app-avatar>
+          </div>
+          <div class="col-md-12 text-center mt-5 mb-5">
+            <a class="btn btn-primary" routerLink="/avocats">
+              Voir plus
+            </a>
           </div>
         </div>
       </div>
