@@ -14,9 +14,11 @@ PS: Le logo est inspiré du [symbole Adinkra, les menottes](https://www.nofi.med
 - [x] Une interface simple
 - [x] Application web responsive
 - [x] Rechercher un avocat
-- [ ] Voir la liste des avocats
+- [x] Voir la liste des avocats
 - [ ] Déposer un avis
 - [ ] S'inscrire comme Avocat
+- [ ] Heberger sur Firebase
+- [ ] Utiliser CloudFirestore
 
 ### Installation
 Pour exécuter le projet, saisissez les commandes suivantes :
