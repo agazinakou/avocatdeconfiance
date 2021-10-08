@@ -13,7 +13,7 @@ export class FilterLawPipe implements PipeTransform {
       return items;
     }
     name = name.toLocaleLowerCase();
-    return items.filter(item => item.law.filter((it: any) => it.toLocaleLowerCase().includes(name)));
+    return items.filter(item => item.law[0].toLocaleLowerCase().includes(name));
   }
 
 }
